@@ -1,0 +1,89 @@
+.menu {
+   z-index: 1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 80px; /* Fechado */
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 20px 0;
+  gap: 20px;
+  box-shadow: 4px 0 10px rgba(0, 0, 0, 0.5);
+  transition: width 0.3s ease;
+  overflow: hidden;
+}
+
+.menu:hover {
+  width: 230px;
+}
+
+.foto-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: rgb(165, 150, 150);
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.foto-area img {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  transition: transform 0.3s;
+}
+
+.foto-area img:hover {
+  transform: scale(1.1);
+}
+
+/* Links do menu */
+.menu-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: 15px;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  width: 80%;
+  padding: 10px;
+  border-radius: 10px;
+  transition: background 0.3s, color 0.3s, justify-content 0.3s;
+}
+
+.menu a span {
+  opacity: 0;
+  width: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  transition: opacity 0.3s, width 0.3s;
+}
+
+.menu:hover a {
+  justify-content: flex-start;
+  padding-left: 25px;
+}
+
+.menu:hover a span {
+  opacity: 1;
+  width: auto;
+}
+
+.menu a:hover {
+  background-color: #1a1a1a;
+  color: #ffd000;
+  transform: scale(1.05);
+}

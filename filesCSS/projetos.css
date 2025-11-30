@@ -1,0 +1,75 @@
+.projetos {
+  text-align: center;
+  padding: 100px 10%;
+  background: #0f172a;
+  color: #f8fafc;
+}
+
+.projetos h2 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  color: #38bdf8;
+}
+
+.projetos .descricao {
+  font-size: 1.1em;
+  margin-bottom: 50px;
+  color: #cbd5e1;
+}
+
+.projetos-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.card-projeto {
+  background: #1e293b;
+  border-radius: 20px;
+  box-shadow: 0 5px 15px rgba(56, 189, 248, 0.2);
+  overflow: hidden;
+  max-width: 320px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  position: relative;
+  z-index: 0;
+}
+
+.card-projeto:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(56, 189, 248, 0.4);
+}
+
+.card-projeto img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card-projeto h3 {
+  margin: 15px 0 10px;
+  font-size: 1.3em;
+  color: #38bdf8;
+}
+
+.card-projeto p {
+  font-size: 0.95em;
+  color: #cbd5e1;
+  margin: 0 20px 20px;
+}
+
+.card-projeto .btn {
+  display: inline-block;
+  background: #38bdf8;
+  color: #0f172a;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 25px;
+  padding: 10px 25px;
+  margin-bottom: 20px;
+  transition: background 0.3s;
+}
+
+.card-projeto .btn:hover {
+  background: #0ea5e9;
+}

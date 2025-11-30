@@ -1,0 +1,88 @@
+.contato {
+  text-align: center;
+  padding: 100px 10%;
+  background: #1e293b;
+  color: #f1f5f9;
+}
+
+.contato h2 {
+  font-size: 2.5em;
+  color: #38bdf8;
+  margin-bottom: 10px;
+}
+
+.contato p {
+  font-size: 1.1em;
+  color: #cbd5e1;
+  margin-bottom: 40px;
+}
+
+.form-contato {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-contato input,
+.form-contato textarea {
+  padding: 12px 15px;
+  border: none;
+  border-radius: 10px;
+  background: #0f172a;
+  color: #f8fafc;
+  font-size: 1em;
+  outline: none;
+  transition: box-shadow 0.3s;
+}
+
+.form-contato input:focus,
+.form-contato textarea:focus {
+  box-shadow: 0 0 0 2px #38bdf8;
+}
+
+.form-contato textarea {
+  min-height: 120px;
+  resize: none;
+}
+
+.form-contato button {
+  background: #38bdf8;
+  color: #0f172a;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  padding: 12px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.form-contato button:hover {
+  background: #0ea5e9;
+  transform: translateY(-3px);
+}
+
+.footer {
+  background: #0f172a;
+  color: #94a3b8;
+  text-align: center;
+  padding: 30px 10%;
+  font-size: 0.9em;
+}
+
+.footer .social {
+  margin-top: 10px;
+}
+
+.footer .social a {
+  color: #38bdf8;
+  font-size: 1.4em;
+  margin: 0 8px;
+  transition: color 0.3s;
+}
+
+.footer .social a:hover {
+  color: #0ea5e9;
+}
+

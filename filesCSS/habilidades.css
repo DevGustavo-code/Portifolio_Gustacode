@@ -1,0 +1,74 @@
+.habilidades {
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #000, #111);
+  color: #fff;
+  text-align: center;
+  padding: 80px 10%;
+}
+
+.habilidades h2 {
+  font-family: "Orbitron", sans-serif;
+  font-size: 2.2rem;
+  color: #ffd000;
+  margin-bottom: 60px;
+}
+
+/* Cards */
+.container-habilidades {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+.card {
+  width: 200px;
+  height: 200px;
+  perspective: 1000px;
+}
+
+.card-front,
+.card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 20px rgba(255, 208, 0, 0.3);
+  transition: transform 0.6s;
+}
+
+.card-front {
+  background: #1a1a1a;
+  border: 2px solid #ffd000;
+  font-size: 1.5rem;
+}
+
+.card-back {
+  background: #ffd000;
+  color: #000;
+  transform: rotateY(180deg);
+  font-size: 0.95rem;
+  padding: 15px;
+  text-align: center;
+}
+
+/* Flip effect */
+.card:hover .card-front {
+  transform: rotateY(180deg);
+}
+
+.card:hover .card-back {
+  transform: rotateY(360deg);
+}
+
+/* Responsivo */
+@media (max-width: 800px) {
+  .card {
+    width: 150px;
+    height: 150px;
+  }
+}
